@@ -35,11 +35,30 @@ func word_break(s string, mMap map[int][]string, start int, mWordDict map[string
 		return value
 	} else {
 		res := []string{}
-		for i := start + 1; i < len(s); i++ {
-		
+		if start == len(s) {
+			res = append(res, "")
 		}
+		end := start + 1
+		for ; end <= len(s); end++ {
+			_, ok := mWordDict[s[start:end]]
+			if !ok {
+				continue
+			}
+			list := word_break(s, mMap, end, mWordDict)
+			for _, ele := range list {
+				tmp := s[start: end]
+				if ele == "" {
+					res = append(res, tmp)
+				}else {
+					res = append(res, tmp + " " + ele)
+				}
+			}
+		}
+		mMap[start] = res
+		return res
 	}
 }
+
 func wordBreak(s string, wordDict []string) []string {
 	mMap := map[int][]string{}
 	mWordDict := map[string]bool{}
@@ -50,5 +69,7 @@ func wordBreak(s string, wordDict []string) []string {
 }
 
 func main() {
-	fmt.Print(wordBreak("aaa", []string{"a", "aa"}))
+	fmt.Print([]string{"1111", "2222"})
+	as := wordBreak("abcd", []string{"ab", "cd", "abc", "d"})
+	fmt.Println(as)
 }
