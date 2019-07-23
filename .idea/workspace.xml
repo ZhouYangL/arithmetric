@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d3cd86e-dafc-4499-85c8-7405ed25a8d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/145_postorderTraversal.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/149_maxPoints.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/150.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/151.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1_twoSum_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/1_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_addTwoNumbers_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/2_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3_lengthOfLongestSubstring_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/3_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/46_permute.go" beforeDir="false" afterPath="$PROJECT_DIR$/46_permute.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5_longestPalindrome_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/5_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7_reverse.go" beforeDir="false" afterPath="$PROJECT_DIR$/7.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8_atoi.go" beforeDir="false" afterPath="$PROJECT_DIR$/8.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/9_isPalindrome.go" beforeDir="false" afterPath="$PROJECT_DIR$/9.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,27 +13,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/65_isNumber.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="931">
-              <caret line="52" column="1" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
-              <folding>
-                <element signature="e#14#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/140_wordBreak.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1425">
-              <caret line="75" selection-start-line="75" selection-end-line="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/145_postorderTraversal.go">
           <provider selected="true" editor-type-id="text-editor">
@@ -80,11 +49,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/150.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-110">
+            <state relative-caret-position="589">
               <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/151.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="631">
+              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
             </state>
           </provider>
         </entry>
@@ -177,6 +155,9 @@
         <option value="$PROJECT_DIR$/46_permute.go" />
         <option value="$PROJECT_DIR$/149_maxPoints.go" />
         <option value="$PROJECT_DIR$/150.go" />
+        <option value="$PROJECT_DIR$/151_test.go" />
+        <option value="$PROJECT_DIR$/151.go" />
+        <option value="$PROJECT_DIR$/155.go" />
       </list>
     </option>
   </component>
@@ -190,7 +171,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -202,6 +182,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -244,7 +225,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build 150.go">
+  <component name="RunManager" selected="Go Build.go build 151.go">
     <configuration name="go build 140_wordBreak.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="arithmetric" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -272,11 +253,11 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build 42_trap.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build 151.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="arithmetric" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/42_trap.go" />
+      <filePath value="$PROJECT_DIR$/151.go" />
       <package value="arithmetric" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -291,19 +272,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build 42_trap.go" />
       <item itemvalue="Go Build.go build 65_isNumber.go" />
       <item itemvalue="Go Build.go build 140_wordBreak.go" />
       <item itemvalue="Go Build.go build 149_maxPoints.go" />
       <item itemvalue="Go Build.go build 150.go" />
+      <item itemvalue="Go Build.go build 151.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build 151.go" />
         <item itemvalue="Go Build.go build 150.go" />
         <item itemvalue="Go Build.go build 149_maxPoints.go" />
         <item itemvalue="Go Build.go build 140_wordBreak.go" />
         <item itemvalue="Go Build.go build 65_isNumber.go" />
-        <item itemvalue="Go Build.go build 42_trap.go" />
       </list>
     </recent_temporary>
   </component>
@@ -341,13 +322,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49885583" visible="true" weight="0.21888413" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49885583" visible="true" weight="0.22174536" />
       <window_info id="Structure" order="1" sideWeight="0.5011442" side_tool="true" weight="0.3462145" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297546" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.22289157" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22289157" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3746988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -451,11 +433,26 @@
           <line>21</line>
           <option name="timeStamp" value="69" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/151.go</url>
+          <line>56</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="GoApplicationRunConfiguration">
+        <watch expression="s[start+1:end]" language="go" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>s[start+1:end]</expression-string>
+        <language-id>go</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>s[4:5]</expression-string>
         <language-id>go</language-id>
@@ -494,27 +491,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../gopkg.in/karalabe/cookiejar.v1/collections/deque/deque.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="131" column="21" selection-start-line="131" selection-start-column="16" selection-end-line="131" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/Cellar/go/1.12.5/libexec/src/time/time.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12046">
-          <caret line="637" column="19" selection-start-line="637" selection-start-column="14" selection-end-line="637" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reflect_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/Cellar/go/1.12.5/libexec/src/time/sleep.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -828,6 +804,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/local/Cellar/go/1.12.5/libexec/src/strconv/quote.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="119" column="16" selection-start-line="119" selection-start-column="5" selection-end-line="119" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/155.go" />
     <entry file="file://$PROJECT_DIR$/145_postorderTraversal.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
@@ -856,6 +840,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/150.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../github.com/golang/protobuf/ptypes/wrappers/wrappers.pb.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -877,10 +868,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/150.go">
+    <entry file="file://$PROJECT_DIR$/151.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-110">
-          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+        <state relative-caret-position="631">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
         </state>
       </provider>
     </entry>
