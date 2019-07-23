@@ -18,12 +18,5 @@ package main
 */
 
 func permute(nums []int) [][]int {
-	result := [][]int{}
-	for i := 0; i < len(nums); i++ {
-		for j := 0; j < len(nums); j++ {
-			tmp := make([]int, len(nums))
-			if i
-		}
-	}
-	
+	return nil
 }
