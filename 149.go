@@ -113,6 +113,8 @@ func maxPoints(points [][]int) int {
 
 func main() {
 	//[[3,10],[0,2],[0,2],[3,10]]
+	m := []int{1,2,3}
+	fmt.Println(m[2:3])
 	//fmt.Println(maxPoints([][]int{[]int{1, 1}, []int{2,2},[]int{3,3}}))
-	fmt.Println(maxPoints([][]int{[]int{3,10},[]int{0,2},[]int{0,2}, []int{3,10}}))
+	//fmt.Println(maxPoints([][]int{[]int{3,10},[]int{0,2},[]int{0,2}, []int{3,10}}))
 }

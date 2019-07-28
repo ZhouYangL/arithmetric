@@ -14,13 +14,13 @@ package main
 
 
 
-type TreeNode struct {
+type TreeNode149 struct {
 	Val int
-	Left *TreeNode
-	Right *TreeNode
+	Left *TreeNode149
+	Right *TreeNode149
 }
 
-func PosOrderRecur(root *TreeNode, recode []int)  []int {
+func PosOrderRecur(root *TreeNode149, recode []int)  []int {
 	if root == nil {
 		return recode
 	}else {
@@ -31,7 +31,7 @@ func PosOrderRecur(root *TreeNode, recode []int)  []int {
 	}
 }
 
-func postorderTraversal(root *TreeNode) []int {
+func postorderTraversal(root *TreeNode149) []int {
 	result := []int{}
 	return PosOrderRecur(root, result)
 }
