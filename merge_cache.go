@@ -17,7 +17,6 @@ import (
 	"strings"
 	"sync"
 	"syscall"
-	"time"
 )
 
 type InfocEraDimensionsCacheModel struct {
@@ -104,7 +103,17 @@ func ConDB(mysql *MySQLConfig) *sql.DB {
 	return SqlDB
 }
 
-func getMaxId(SqlDB *sql.DB)(id int)  {
+
+func is_exists(f string) bool {
+	_, err := os.Stat(f)
+	if os.IsNotExist(err) {
+		return false
+	}
+	return err == nil
+}
+
+
+func QueryMaxId(SqlDB *sql.DB) (id int) {
 	querySql := `SELECT
 					 id
 					FROM infoc_era_dimensions_cache
@@ -125,6 +134,44 @@ func getMaxId(SqlDB *sql.DB)(id int)  {
 		return
 	}
 	return
+}
+
+
+func readIdFromFile(filePath string) (size int) {
+	buf, err := ioutil.ReadFile(filePath)
+	if err != nil {
+		return
+	}
+	size, err = strconv.Atoi(string(buf))
+	if err != nil{
+		return
+	}
+	return
+}
+
+
+func getMaxId(SqlDB *sql.DB, filePath string)(id int)  {
+	if is_exists(filePath){
+		id = readIdFromFile(filePath)
+	}else {
+		id = QueryMaxId(SqlDB)
+		id -= 20
+	}
+	return
+}
+
+
+func RecodeMaxId(SqlDB *sql.DB, filePath string)  {
+	id := QueryMaxId(SqlDB)
+	fileHandle, err := os.Create(filePath)
+	if err != nil{
+		fmt.Println(err)
+		return
+	}
+	_, err = fileHandle.WriteString(strconv.Itoa(id))
+	if err != nil {
+		fmt.Println(err)
+	}
 }
 
 func FindTask(SqlDB *sql.DB, id int) (result []TaskJob, err error) {
@@ -153,10 +200,12 @@ func FindTask(SqlDB *sql.DB, id int) (result []TaskJob, err error) {
 
 func mergeCache(yamlConfig *YAML)  {
 	SqlDB := ConDB(&yamlConfig.Mysql)
-	id := getMaxId(SqlDB) - 20
+	defer SqlDB.Close()
+	MaxIdFilePath := path.Join(yamlConfig.Path.Data, "MaxId.txt")
+	id := getMaxId(SqlDB, MaxIdFilePath)
 
 	taskJob, err := FindTask(SqlDB, id)
-	id = getMaxId(SqlDB)
+	RecodeMaxId(SqlDB, MaxIdFilePath)
 	if err != nil {
 		return
 	}
@@ -167,7 +216,6 @@ func mergeCache(yamlConfig *YAML)  {
 		go dealTask(task, SqlDB, &wg)
 	}
 	wg.Wait()
-	time.Sleep(10*60*time.Second)
 }
 
 func dealTask(job TaskJob, db *sql.DB, wg *sync.WaitGroup)  {
